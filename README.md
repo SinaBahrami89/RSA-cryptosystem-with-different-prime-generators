@@ -1,6 +1,5 @@
 This is a simple implementation of the RSA public-key cryptosystem developed by Sina Bahrami.
-Anyone is free to use or modify the codes and modules that are contained in this file. Citing is
-appreciated.
+Anyone is free to use or modify the codes and modules that are contained in this file. 
 
 The script is written in Python 3.
 
