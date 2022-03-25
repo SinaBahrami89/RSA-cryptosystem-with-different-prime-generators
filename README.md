@@ -1,14 +1,11 @@
-This is a simple implementation of the RSA public-key cryptosystem developed by Sina Bahrami.
-Anyone is free to use or modify the codes and modules that are contained in this file. 
+This is a simple implementation of the RSA public-key cryptosystem developed by Sina Bahrami in Python 3.
 
-The script is written in Python 3.
-
-There are a total of 5 modules:
+There are a total of 5 scripts/modules:
 
 - prime_generator.py:
 generates random prime integers using the following primality tests: Fermat, Miller-Rabin, deterministic Miller, and Baillie-PSW.
 the first two methods are the most efficient. deterministic Miller is also pretty good for integers less than or on the order of
-2**256. however, the current implementation of Baillie-PSW is inefficient. i do not recommend using this method at this statge.
+2**256. however, the current implementation of Baillie-PSW is inefficient.
 Randoms are expected to be cryptographically secure. They are generated via the SystemRandom class of the random module.
     
 - aux_fncs.py:
@@ -21,7 +18,7 @@ written in a file called rsa_keys.txt along with the exact date and time at whic
     
 - RSA_Encryption.py:
 when you run this script, you will be prompted to enter the public key and the text you would like to encrypt. it breaks up the text into
-a list of characters and then translates each character to its Unicode code point by the built-in ord function. the encrypted message is
+a list of characters and then translates each character to Unicode by the built-in ord function. the encrypted message is
 written to a file called cipher.txt
     
 - RSA_decryption.py:
